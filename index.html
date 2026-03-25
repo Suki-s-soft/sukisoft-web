@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sukisoft — Apps que inspiran</title>
+    <meta name="description"
+        content="Sukisoft crea aplicaciones móviles enfocadas en experiencias simples, rápidas y hermosas." />
+    <meta property="og:title" content="Sukisoft" />
+    <meta property="og:description" content="Apps que inspiran. Manga, finanzas y más." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- ─── NAVBAR ─────────────────────────────────────────────── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span>Sukisoft</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#apps">Apps</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#apps" onclick="closeMobile()">Apps</a>
+            <a href="#about" onclick="closeMobile()">Nosotros</a>
+            <a href="#contact" onclick="closeMobile()">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- ─── HERO ────────────────────────────────────────────────── -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="badge-pill">✦ Aplicaciones independientes</div>
+            <h1 class="hero-title">
+                Creamos apps<br />
+                <span class="gradient-text">que inspiran</span>
+            </h1>
+            <p class="hero-sub">
+                Diseño cuidadoso, rendimiento real y experiencias que la gente quiere usar
+                todos los días. Eso es Sukisoft.
+            </p>
+            <div class="hero-cta">
+                <a href="#apps" class="btn btn-primary">Ver aplicaciones</a>
+                <a href="#about" class="btn btn-ghost">Conoce más</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">2+</span>
+                    <span class="stat-label">Apps publicadas</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">Android</span>
+                    <span class="stat-label">Plataforma</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">100%</span>
+                    <span class="stat-label">Indie</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ─── APPS ─────────────────────────────────────────────────── -->
+    <section class="apps-section" id="apps">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestros productos</span>
+                <h2 class="section-title">Aplicaciones</h2>
+                <p class="section-sub">Cada app nace de una necesidad real. Sin bloatware, sin fricciones.</p>
+            </div>
+
+            <div class="apps-grid">
+
+                <!-- ─ KAMI READER ─ -->
+                <article class="app-card featured">
+                    <div class="card-glow glow-red"></div>
+                    <div class="card-inner">
+                        <div class="app-header">
+                            <div class="app-icon kami-icon">
+                                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="60" height="60" rx="16" fill="url(#g1)" />
+                                    <path d="M14 44V16l16 8 16-8v28l-16-8-16 8z" fill="white" fill-opacity="0.9" />
+                                    <defs>
+                                        <linearGradient id="g1" x1="0" y1="0" x2="60" y2="60"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FF6E6E" />
+                                            <stop offset="1" stop-color="#D23C3C" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="app-meta">
+                                <h3 class="app-name">KamiReader</h3>
+                                <span class="app-category">Manga &amp; Cómic</span>
+                            </div>
+                            <span class="badge-store badge-play">Google Play</span>
+                        </div>
+                        <p class="app-desc">
+                            Lee tus mangas favoritos en español, gratis y sin límites. Capítulos actualizados
+                            diariamente desde múltiples proveedores, modo oscuro y seguimiento de progreso.
+                        </p>
+                        <ul class="feature-list">
+                            <li><span class="feat-icon">📚</span> Catálogo masivo en español</li>
+                            <li><span class="feat-icon">🌙</span> Modo oscuro nativo</li>
+                            <li><span class="feat-icon">⚡</span> Carga ultrarrápida de páginas</li>
+                            <li><span class="feat-icon">🔖</span> Seguimiento de progreso</li>
+                        </ul>
+                        <div class="card-actions">
+                            <a href="https://play.google.com/store/apps/details?id=com.yourusername.kamireader"
+                                target="_blank" rel="noopener" class="btn btn-play">
+                                <svg class="play-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.36.6 1.24 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"
+                                        fill="currentColor" />
+                                </svg>
+                                Google Play
+                            </a>
+                            <a href="https://github.com/jesusberrios/kami-reader-app" target="_blank" rel="noopener"
+                                class="btn btn-github">
+                                <svg class="gh-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                                        fill="currentColor" />
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ─ ZENSU ─ -->
+                <article class="app-card">
+                    <div class="card-glow glow-blue"></div>
+                    <div class="card-inner">
+                        <div class="app-header">
+                            <div class="app-icon zensu-icon">
+                                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="60" height="60" rx="16" fill="url(#g2)" />
+                                    <path d="M18 38l10-16 10 16H18z" fill="white" fill-opacity="0.9" />
+                                    <circle cx="30" cy="22" r="4" fill="white" fill-opacity="0.6" />
+                                    <defs>
+                                        <linearGradient id="g2" x1="0" y1="0" x2="60" y2="60"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#4F9EFF" />
+                                            <stop offset="1" stop-color="#2563EB" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="app-meta">
+                                <h3 class="app-name">Zensu</h3>
+                                <span class="app-category">Finanzas personales</span>
+                            </div>
+                            <span class="badge-store badge-play">Google Play</span>
+                        </div>
+                        <p class="app-desc">
+                            Controla tus ingresos, gastos y metas financieras de forma sencilla.
+                            Zensu te da claridad sobre tu dinero sin complicaciones.
+                        </p>
+                        <ul class="feature-list">
+                            <li><span class="feat-icon">💰</span> Registro de ingresos y gastos</li>
+                            <li><span class="feat-icon">🎯</span> Metas de ahorro</li>
+                            <li><span class="feat-icon">📊</span> Estadísticas visuales</li>
+                            <li><span class="feat-icon">🔒</span> Datos privados y seguros</li>
+                        </ul>
+                        <div class="card-actions">
+                            <a href="https://play.google.com/store/apps/details?id=com.sukisoft.zenzu" target="_blank"
+                                rel="noopener" class="btn btn-play">
+                                <svg class="play-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.36.6 1.24 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"
+                                        fill="currentColor" />
+                                </svg>
+                                Google Play
+                            </a>
+                            <a href="https://github.com/jesusberrios/finanzas-app" target="_blank" rel="noopener"
+                                class="btn btn-github">
+                                <svg class="gh-icon" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                                        fill="currentColor" />
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── ABOUT ────────────────────────────────────────────────── -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <div class="vc-orb vc-orb-1"></div>
+                        <div class="vc-orb vc-orb-2"></div>
+                        <div class="vc-content">
+                            <div class="big-emoji">⚡</div>
+                            <p class="vc-name">Sukisoft</p>
+                            <p class="vc-role">Mobile Developer</p>
+                            <div class="tech-pills">
+                                <span>React Native</span>
+                                <span>Expo</span>
+                                <span>Firebase</span>
+                                <span>Node.js</span>
+                                <span>TypeScript</span>
+                                <span>Android</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-tag">Sobre mí</span>
+                    <h2 class="section-title">¿Quién es<br /><span class="gradient-text">Sukisoft?</span></h2>
+                    <p class="about-p">
+                        Soy un desarrollador indie apasionado por crear aplicaciones móviles que la gente
+                        realmente use. Me enfoco en React Native y Android, construyendo productos desde cero
+                        —desde la idea hasta la Play Store.
+                    </p>
+                    <p class="about-p">
+                        Cada app que publico bajo Sukisoft nace de una necesidad real: leer manga en español sin
+                        fricción, controlar tus finanzas sin complejidad. La simplicidad no es opcional,
+                        es el objetivo.
+                    </p>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <span class="value-icon">🎨</span>
+                            <div>
+                                <strong>Diseño primero</strong>
+                                <p>La interfaz importa tanto como la funcionalidad.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">⚡</span>
+                            <div>
+                                <strong>Performance real</strong>
+                                <p>Rápido, fluido, sin excusas.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🔒</span>
+                            <div>
+                                <strong>Privacidad</strong>
+                                <p>Tus datos son tuyos, punto.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🚀</span>
+                            <div>
+                                <strong>Mejora continua</strong>
+                                <p>Updates frecuentes basados en feedback real.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CONTACT ──────────────────────────────────────────────── -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-glow"></div>
+                <div class="contact-inner">
+                    <span class="section-tag">Hablemos</span>
+                    <h2 class="section-title">¿Tienes una idea<br />o feedback?</h2>
+                    <p class="contact-sub">
+                        Me encanta escuchar sugerencias, ideas de nuevas apps o reportes de bugs.
+                        No dudes en escribir.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:sukisoft@gmail.com" class="contact-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                            sukisoft@gmail.com
+                        </a>
+                        <a href="https://github.com/jesusberrios" target="_blank" rel="noopener" class="contact-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ───────────────────────────────────────────────── -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span>Sukisoft</span>
+            </a>
+            <p class="footer-copy">© 2026 Sukisoft. Hecho con ❤️ y mucho café.</p>
+            <div class="footer-links">
+                <a href="https://github.com/jesusberrios" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://play.google.com/store/apps/developer?id=Sukisoft" target="_blank" rel="noopener">Play
+                    Store</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

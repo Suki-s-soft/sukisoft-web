@@ -1,0 +1,7 @@
+{
+  "name": "sukisoft-web",
+  "description": "Sukisoft GitHub Pages landing page",
+  "scripts": {
+    "dev": "npx serve ."
+  }
+}
