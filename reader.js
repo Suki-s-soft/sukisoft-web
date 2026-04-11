@@ -18,7 +18,7 @@
   const mode = String(getParam('mode') || 'horizontal').trim().toLowerCase() === 'vertical' ? 'vertical' : 'horizontal';
   const resumeIndex = Number(getParam('resumeIndex'));
   const resumeOffset = Number(getParam('resumeOffset'));
-  const FALLBACK_BACKEND = 'https://backend-kami-api-production.up.railway.app';
+  const FALLBACK_BACKEND = 'localhost:3000';
 
   let imageElements = [];
   let lastProgressSentAt = 0;
